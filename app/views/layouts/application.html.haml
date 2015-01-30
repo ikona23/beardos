@@ -4,12 +4,16 @@
 	%title Beardos | everthing with code
 	= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
 	= javascript_include_tag 'application', 'data-turbolinks-track' => true
+	%script{:src => "use.typekit.net/yuu5dpc.js"}
 	= csrf_meta_tags
 %body
 	%header
 		.header_inner
 			-#= link_to image_tag( 'logo.svg'), root_path, id: "logo"
 			%nav
+				= link_to "Home", root_path
+				= link_to "About Us", root_path
+				= link_to "Contact Us"
 				- if user_signed_in?
 					= link_to "New Note", new_note_path
 					= link_to "Sign Out", destroy_user_session_path, method: :delete
