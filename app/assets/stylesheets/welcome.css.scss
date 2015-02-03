@@ -1,6 +1,6 @@
 #banner {
 //	background-image: url(image_path("welcome_banner_image.jpg"));
-  background: #34495e;
+     background: #3a2c22;
 	background-size: cover;
     font-family: "kari-pro-wide",sans-serif;
 	background-repeat: no-repeat;
@@ -44,7 +44,7 @@
 
 #callouts {
 //	background-image: url(image_path("callout_background.jpg"));
-  background: #14715a;
+  background: #4e3f32;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: top center;
@@ -85,4 +85,10 @@
 			margin: 0 0 2.5rem 0;
 			color: #a7a8a8;
 		}
+}
+.icona {
+  margin-top:30px;
+  padding-left:20px;
+  width: 350px;
+  margin-right:40px
 }
